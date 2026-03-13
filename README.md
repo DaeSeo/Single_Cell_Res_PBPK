@@ -1,9 +1,4 @@
 # Single_Cell_Res_PBPK
-MPhil Project
-
-
-
-# Single_Cell_Res_PBPK
 
 This project is a data pipeline designed to estimate cell-type specific receptor concentrations ($nM$) by integrating single-cell RNA-seq data and bulk protein abundance.
 

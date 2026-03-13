@@ -1,0 +1,27 @@
+# [Core Data Science]
+numpy==1.24.4
+pandas==2.0.3
+scipy==1.10.1
+
+# [Scraping]
+selenium==4.27.1
+beautifulsoup4==4.14.3
+webdriver-manager==4.0.2
+requests==2.32.4
+
+# [Bayesian Inference]
+pymc==5.6.1
+arviz==0.15.1
+pytensor==2.12.3
+
+# [Single-Cell Analysis]
+scanpy==1.9.8
+anndata==0.9.2
+
+# [Visualization]
+matplotlib==3.7.5
+seaborn==0.13.2
+
+# [Utilities]
+tqdm==4.67.1
+loguru==0.7.3

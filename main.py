@@ -1,11 +1,8 @@
 import os
 import argparse
 import pandas as pd
-
-# Imports following the local project folder structure
-from Scraper.hpa_scraper import HPASingleCellScraper
-from Scraper.paxdb_scraper import PaxDbBulkScraper
-from Inference.bayesian_ppm import BayesianPPMCalculator
+from scraper import HPASingleCellScraper, PaxDbBulkScraper
+from inference import BayesianPPMCalculator
 
 def main():
     # 1. Argument parsing configuration

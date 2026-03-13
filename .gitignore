@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+.env
+
+# Generated data and plots
+data/*.csv
+plots_results/*.png
+
+# OS and IDE files
+.DS_Store
+.vscode/
+
+# Miscellaneous
+.Rhistory

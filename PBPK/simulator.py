@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import os
 from scipy.integrate import solve_ivp
-from PBPK.equations import multi_cell_tmdd_ode
-from Inference.cell_volume import get_total_volume_L
+from pbpk.equations import multi_cell_tmdd_ode
+from inference.cell_volume import get_total_volume_L
 
 class PBPKSimulator:
     def __init__(self, data_path, config): 

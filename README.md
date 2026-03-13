@@ -1,40 +1,67 @@
 # Single_Cell_Res_PBPK
 
-This project is a data pipeline designed to estimate cell-type specific receptor concentrations ($nM$) by integrating single-cell RNA-seq data and bulk protein abundance.
+# Single_Cell_Res_PBPK
+This project is a high-resolution Single-Cell Resolved PBPK (Physiologically Based Pharmacokinetic) Pipeline. It estimates cell-type specific receptor concentrations (nM) by integrating single-cell RNA-seq data with bulk protein abundance and simulates drug-target engagement (TMDD) at the cellular level.
 
 ## 📌 Project Overview
-The goal of this pipeline is to bridge the gap between transcriptomics (RNA) and proteomics (Protein) to provide high-resolution input data for physiological modeling. It automates the collection of biological data and applies Bayesian scaling to estimate local concentrations.
+The pipeline bridges the gap between transcriptomics and proteomics to provide high-resolution inputs for mechanistic modeling. It automates data collection, applies Bayesian scaling for concentration estimation, and runs complex ODE-based simulations to predict drug occupancy across different tissues.
+
 
 ## 📂 Folder Structure
 
 ```text
-Main_Project/
+Single_Cell_Res_PBPK/
 ├── Scraper/
-│   ├── hpa_scraper.py      # Scrapes MW (via UniProt) and Single-cell RNA (nCPM) from HPA
+│   ├── hpa_scraper.py      # Scrapes MW and Single-cell RNA (nCPM) from HPA
 │   └── paxdb_scraper.py    # Scrapes Bulk protein abundance (PPM) from PaxDb
 ├── Inference/
-│   └── bayesian_ppm.py     # Bayesian MCMC model for Local PPM and nM conversion
-├── data/                   # Directory where generated CSVs are stored
-└── main.py                 # Main execution script
+│   ├── bayesian_ppm.py     # Bayesian MCMC model for Local PPM and nM conversion
+│   └── cell_volume.py      # Cell volume database for concentration scaling
+├── PBPK/
+│   ├── config.py           # Master configuration (Drug/System PK parameters)
+│   ├── equations.py        # Multi-cell TMDD ODE system
+│   └── simulator.py        # Numerical solver engine (Scipy Radau)
+├── data/                   # Generated CSVs (Input data & Simulation results)
+├── plots_results/          # Generated dual-subplot PNG figures
+├── main.py                 # Step 1: Data Acquisition & Preprocessing
+├── main_pbpk.py            # Step 2: PBPK Simulation execution
+└── visualisation.py        # Step 3: High-resolution Figure Generation
 ```
 
 🛠 Installation
-Ensure you have Python 3.9+ and the Chrome browser installed. Install the required libraries using pip:
+Ensure you have Python 3.8+ and Chrome browser installed.
 
 ```bash
-pip install pandas numpy selenium beautifulsoup4 pymc arviz webdriver-manager
+pip install pandas numpy selenium beautifulsoup4 pymc arviz webdriver-manager scipy matplotlib seaborn
 ```
 
 🚀 How to Run
-Run the pipeline by providing the HPA and PaxDb URLs for your target protein.
+Step 1: Data Acquisition
+
+Scrape HPA and PaxDb to generate the cell-resolved receptor concentration dataset.
+
 
 ```bash
 python main.py --hpa [HPA_URL] --pax [PaxDb_URL]
+
+
+python main.py --hpa "https://www.proteinatlas.org/ENSG00000146648-EGFR" --pax "https://pax-db.org/protein/9606/ENSP00000275493"
 ```
 
-Example (EGFR):
+Step 2: PBPK Simulation
+
+Run the ODE solver using literature-based PK parameters (e.g., Shah & Betts 2013).
+
 ```bash
-python main.py \
---hpa [https://www.proteinatlas.org/ENSG00000146648-EGFR](https://www.proteinatlas.org/ENSG00000146648-EGFR) \
---pax [https://pax-db.org/protein/9606/ENSP00000275493](https://pax-db.org/protein/9606/ENSP00000275493)
+# Example: Cetuximab at 250mg/m2
+python main_pbpk.py --Drug Cetuximab --Dose 250.0
 ```
+
+Step 3: Visualisation
+
+Generate 2-subplot figures showing Receptor Occupancy (%) and Bound Drug (nM).
+
+```bash
+# Generate plots for all tissues
+python visualisation.py --Drug Cetuximab --Dose 250.0 --Tissue all
+```

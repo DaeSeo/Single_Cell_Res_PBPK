@@ -63,10 +63,7 @@ Run the ODE solver using literature-based PK parameters (e.g., Shah & Betts 2013
 
 ```bash
 # Example 1: Cetuximab targeting EGFR at standard dose (250mg/m2)
-python main_pbpk.py --Target EGFR --Drug Cetuximab --Dose 250.0
-
-# Example 2: Panitumumab targeting EGFR at custom dose
-python main_pbpk.py --Target EGFR --Drug Panitumumab --Dose 221.0
+python main_pbpk.py --File data/Final_EGFR_Data.csv --Drug Cetuximab --Target EGFR --Dose 250.0
 ```
 Results are automatically saved to data/pbpk_results_[target]_[drug]_[dose]mg.csv to prevent overwriting.
 
@@ -77,9 +74,9 @@ Generate 2-subplot figures showing Receptor Occupancy (%) and Bound Drug (nM). T
 
 ```bash
 # Generate and save plots for all tissues
-python visualisation.py --Target EGFR --Drug Cetuximab --Dose 250.0 --Tissue all
+python visualisation.py --Drug Cetuximab --Target EGFR --Dose 250.0 --Tissue all
 
 # Generate and save a plot for a specific tissue
-python visualisation.py --Target EGFR --Drug Cetuximab --Dose 250.0 --Tissue Kidney
+python visualisation.py --Drug Cetuximab --Target EGFR --Dose 250.0 --Tissue Kidney
 ```
 Plots are saved in the plots_results/ directory (e.g., plot_egfr_cetuximab_kidney_250.0mg.png).

@@ -29,7 +29,7 @@ def main():
     output_filename = f"pbpk_results_{config.target_name}_{config.drug_name}_{config.DOSE_MG_M2}mg.csv"
     
     # 4. Run simulation and save results
-    sim.run_all_and_save(output_filename=output_filename, days=56)
+    sim.run_all_and_save(output_filename=output_filename, days=120)
 
 if __name__ == "__main__":
     main()

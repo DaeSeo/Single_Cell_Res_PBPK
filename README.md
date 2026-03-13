@@ -34,7 +34,5 @@ python main.py --hpa [HPA_URL] --pax [PaxDb_URL]
 
 Example (EGFR):
 ```bash
-python main.py \
---hpa [https://www.proteinatlas.org/ENSG00000146648-EGFR](https://www.proteinatlas.org/ENSG00000146648-EGFR) \
---pax [https://pax-db.org/protein/9606/ENSP00000275493](https://pax-db.org/protein/9606/ENSP00000275493)
+python main.py --hpa [https://www.proteinatlas.org/ENSG00000146648-EGFR](https://www.proteinatlas.org/ENSG00000146648-EGFR) --pax [https://pax-db.org/protein/9606/ENSP00000275493](https://pax-db.org/protein/9606/ENSP00000275493)
 ```

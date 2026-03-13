@@ -1,0 +1,119 @@
+target,tissue,cell_type,cells,nCPM,MW_kDa
+EGFR,Brain,Brain excitatory neurons,61656,3.5,134.277
+EGFR,Brain,Brain inhibitory neurons,46037,82.4,134.277
+EGFR,Brain,Other brain neurons,4224,2.4,134.277
+EGFR,Brain,Astrocytes,7667,308.9,134.277
+EGFR,Brain,Bergmann glia,7533,389,134.277
+EGFR,Brain,Oligodendrocyte progenitor cells,7731,199.3,134.277
+EGFR,Brain,Oligodendrocytes,9947,8.8,134.277
+EGFR,Brain,Microglia,6999,1.8,134.277
+EGFR,Brain,Ependymal cells,3502,63.5,134.277
+EGFR,Brain,Choroid plexus epithelial cells,6023,103.5,134.277
+EGFR,Brain,Vascular endothelial cells,2269,255,134.277
+EGFR,Brain,Pericytes,1166,210.2,134.277
+EGFR,Brain,Vascular smooth muscle cells,263,139.3,134.277
+EGFR,Brain,Fibroblasts,3214,125.3,134.277
+EGFR,Brain,Monocytes,136,2.3,134.277
+EGFR,Brain,Macrophages,249,28.5,134.277
+EGFR,Brain,T-cells,999,4.2,134.277
+EGFR,Brain,B-cells,38,0,134.277
+EGFR,Brain,NK-cells,285,0,134.277
+EGFR,Lung,Respiratory ciliated cells,553,95.3,134.277
+EGFR,Lung,Respiratory deuterosomal cells,31,243.6,134.277
+EGFR,Lung,Alveolar cells type 1,2608,551,134.277
+EGFR,Lung,Alveolar cells type 2,8222,189.5,134.277
+EGFR,Lung,Transitional alveolar cells,1176,190.7,134.277
+EGFR,Lung,Respiratory ionocytes,31,729,134.277
+EGFR,Lung,Respiratory basal cells,1332,935.5,134.277
+EGFR,Lung,Submucosal glandular cells,116,292.4,134.277
+EGFR,Lung,Respiratory secretory cells,607,296.2,134.277
+EGFR,Lung,Vascular endothelial cells,11099,217.9,134.277
+EGFR,Lung,Lymphatic endothelial cells,230,0,134.277
+EGFR,Lung,Pericytes,555,213.3,134.277
+EGFR,Lung,Vascular smooth muscle cells,289,155.9,134.277
+EGFR,Lung,Fibroblasts,886,323.9,134.277
+EGFR,Lung,Mast cells,1237,2.8,134.277
+EGFR,Lung,Neutrophils,385,7.8,134.277
+EGFR,Lung,Monocytes,2886,2.6,134.277
+EGFR,Lung,Macrophages,13132,1.1,134.277
+EGFR,Lung,T-cells,4072,2.8,134.277
+EGFR,Lung,Innate lymphoid cells,42,0,134.277
+EGFR,Lung,B-cells,274,2.9,134.277
+EGFR,Lung,Plasma cells,48,8.9,134.277
+EGFR,Lung,PDCs,18,7.3,134.277
+EGFR,Lung,NK-cells,1252,2.6,134.277
+EGFR,Liver,Cholangiocytes,95,139.5,134.277
+EGFR,Liver,Hepatocytes,2512,298.4,134.277
+EGFR,Liver,Vascular endothelial cells,818,38.5,134.277
+EGFR,Liver,Hepatic stellate cells,33,109.7,134.277
+EGFR,Liver,Monocytes,299,2.5,134.277
+EGFR,Liver,Macrophages,375,2.4,134.277
+EGFR,Liver,Kupffer cells,224,50.2,134.277
+EGFR,Liver,T-cells,999,1.9,134.277
+EGFR,Liver,B-cells,101,4.5,134.277
+EGFR,Liver,Plasma cells,118,1.1,134.277
+EGFR,Liver,NK-cells,830,2.8,134.277
+EGFR,Kidney,Renal collecting duct intercalated cells,3361,527.2,134.277
+EGFR,Kidney,Renal collecting duct principal cells,7175,275.9,134.277
+EGFR,Kidney,Renal connecting tubule cells,2404,172.3,134.277
+EGFR,Kidney,Podocytes,689,276.7,134.277
+EGFR,Kidney,Proximal tubule cells,13123,316.2,134.277
+EGFR,Kidney,Loop of henle epithelial cells,15666,205.4,134.277
+EGFR,Kidney,Papillary tip epithelial cells,583,310,134.277
+EGFR,Kidney,Distal convoluted tubule cells,2897,34.1,134.277
+EGFR,Kidney,Vascular endothelial cells,5236,147.9,134.277
+EGFR,Kidney,Lymphatic endothelial cells,74,12.6,134.277
+EGFR,Kidney,Pericytes,728,330.8,134.277
+EGFR,Kidney,Vascular smooth muscle cells,292,316.8,134.277
+EGFR,Kidney,Fibroblasts,5642,481.5,134.277
+EGFR,Kidney,Macrophages,740,35.2,134.277
+EGFR,Kidney,T-cells,632,24.5,134.277
+EGFR,Kidney,B-cells,156,11.8,134.277
+EGFR,Kidney,NK-cells,81,19.2,134.277
+EGFR,Breast,Breast myoepithelial cells,86,142.9,134.277
+EGFR,Breast,Breast secretory cells,1755,66.6,134.277
+EGFR,Breast,Breast lactating cells,420,32.4,134.277
+EGFR,Breast,Breast hormone-responsive cells,4827,10.6,134.277
+EGFR,Breast,Vascular endothelial cells,3614,16.7,134.277
+EGFR,Breast,Lymphatic endothelial cells,183,1.7,134.277
+EGFR,Breast,Pericytes,268,49.5,134.277
+EGFR,Breast,Vascular smooth muscle cells,708,61.7,134.277
+EGFR,Breast,Fibroblasts,4842,214.3,134.277
+EGFR,Breast,Monocytes,174,0,134.277
+EGFR,Breast,Macrophages,421,0,134.277
+EGFR,Breast,T-cells,9456,0.3,134.277
+EGFR,Breast,Innate lymphoid cells,24,0,134.277
+EGFR,Breast,B-cells,101,3.2,134.277
+EGFR,Breast,Plasma cells,76,0,134.277
+EGFR,Breast,CDC,173,0,134.277
+EGFR,Breast,PDCs,31,0,134.277
+EGFR,Heart,Epicardial cells,347,477.6,134.277
+EGFR,Heart,Cardiomyocytes,33023,13.7,134.277
+EGFR,Heart,Vascular endothelial cells,1053,62.2,134.277
+EGFR,Heart,Pericytes,567,159.7,134.277
+EGFR,Heart,Vascular smooth muscle cells,217,85.1,134.277
+EGFR,Heart,Adipocytes,151,193.3,134.277
+EGFR,Heart,Fibroblasts,3432,392.2,134.277
+EGFR,Heart,Macrophages,1379,16.9,134.277
+EGFR,Skin,Suprabasal keratinocytes,578,891.2,134.277
+EGFR,Skin,Melanocytes,115,20.3,134.277
+EGFR,Skin,Basal keratinocytes,999,679.3,134.277
+EGFR,Skin,Smooth muscle cells,45,62.4,134.277
+EGFR,Skin,Vascular endothelial cells,1607,28,134.277
+EGFR,Skin,Lymphatic endothelial cells,327,13.7,134.277
+EGFR,Skin,Pericytes,503,67.6,134.277
+EGFR,Skin,Vascular smooth muscle cells,898,59.9,134.277
+EGFR,Skin,Fibroblasts,6531,271.4,134.277
+EGFR,Skin,Macrophages,133,0,134.277
+EGFR,Skin,T-cells,1688,4.9,134.277
+EGFR,Skin,CDC,2081,6,134.277
+EGFR,Blood,Neutrophil progenitors,1497,0,134.277
+EGFR,Blood,Neutrophils,20149,0,134.277
+EGFR,Blood,Monocytes,11488,0,134.277
+EGFR,Blood,T-cells,1582,0.3,134.277
+EGFR,Blood,B-cells,1024,0.1,134.277
+EGFR,Blood,Plasma cells,24,0,134.277
+EGFR,Blood,PDCs,14,0,134.277
+EGFR,Blood,NK-cells,1392,0.1,134.277
+EGFR,Blood,Platelets,183,0,134.277
+EGFR,Blood,Erythrocytes,1760,0,134.277

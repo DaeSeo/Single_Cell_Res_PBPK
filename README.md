@@ -1,6 +1,4 @@
 # Single_Cell_Res_PBPK
-
-# Single_Cell_Res_PBPK
 This project is a high-resolution Single-Cell Resolved PBPK (Physiologically Based Pharmacokinetic) Pipeline. It estimates cell-type specific receptor concentrations (nM) by integrating single-cell RNA-seq data with bulk protein abundance and simulates drug-target engagement (TMDD) at the cellular level.
 
 ## 📌 Project Overview
@@ -44,8 +42,8 @@ Scrape HPA and PaxDb to generate the cell-resolved receptor concentration datase
 ```bash
 python main.py --hpa [HPA_URL] --pax [PaxDb_URL]
 
-
-python main.py --hpa "https://www.proteinatlas.org/ENSG00000146648-EGFR" --pax "https://pax-db.org/protein/9606/ENSP00000275493"
+#Example: EGFR
+python main.py --hpa "https://www.proteinatlas.org/ENSG00000146648-EGFR" --pax "https://pax db.org/protein/9606/ENSP00000275493"
 ```
 
 Step 2: PBPK Simulation
@@ -53,12 +51,8 @@ Step 2: PBPK Simulation
 Run the ODE solver using literature-based PK parameters (e.g., Shah & Betts 2013).
 
 ```bash
-<<<<<<< HEAD
 # Example: Cetuximab at 250mg/m2
 python main_pbpk.py --Drug Cetuximab --Dose 250.0
-=======
-python main.py --hpa "https://www.proteinatlas.org/ENSG00000146648-EGFR" --pax "https://pax-db.org/protein/9606/ENSP00000275493"
->>>>>>> 6ef7502f2586257f3fa3b9afc61b94b6274aa7dd
 ```
 
 Step 3: Visualisation
@@ -68,4 +62,6 @@ Generate 2-subplot figures showing Receptor Occupancy (%) and Bound Drug (nM).
 ```bash
 # Generate plots for all tissues
 python visualisation.py --Drug Cetuximab --Dose 250.0 --Tissue all
-```
+```
+
+

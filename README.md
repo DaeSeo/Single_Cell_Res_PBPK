@@ -53,8 +53,12 @@ Step 2: PBPK Simulation
 Run the ODE solver using literature-based PK parameters (e.g., Shah & Betts 2013).
 
 ```bash
+<<<<<<< HEAD
 # Example: Cetuximab at 250mg/m2
 python main_pbpk.py --Drug Cetuximab --Dose 250.0
+=======
+python main.py --hpa "https://www.proteinatlas.org/ENSG00000146648-EGFR" --pax "https://pax-db.org/protein/9606/ENSP00000275493"
+>>>>>>> 6ef7502f2586257f3fa3b9afc61b94b6274aa7dd
 ```
 
 Step 3: Visualisation

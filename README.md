@@ -26,14 +26,14 @@ Single_Cell_Res_PBPK/
 └── visualisation.py        # Step 3: High-resolution Figure Generation
 ```
 
-🛠 Installation
+## 🛠 Installation
 Ensure you have Python 3.8+ and Chrome browser installed.
 
 ```bash
 pip install pandas numpy selenium beautifulsoup4 pymc arviz webdriver-manager scipy matplotlib seaborn
 ```
 
-🚀 How to Run
+## 🚀 How to Run
 Step 1: Data Acquisition
 
 Scrape HPA and PaxDb to generate the cell-resolved receptor concentration dataset.
